@@ -1,5 +1,5 @@
 # poc-kafka-beam-python
-Create a data processing pipeline that listens to tweets and write them
+Create a data processing pipeline that listens to tweets and writes them
 to an apache kafka topic, consumes and processes them through an apache beam pipeline
 and outputs the results to a second kafka topic. The goal is to track real time trends
 in specific locations via a dashboard that streams from a kafka topic via a FastAPI endpoint 
@@ -13,10 +13,12 @@ kafka topic messages with no java errors but the windowing function for
 aggregating unbounded data did not work https://beam.apache.org/documentation/sdks/python-streaming/#unsupported-features
 
 # TODO
-- [ ] Add fast API and dashboard
-- [ ] write a RADME.md with instructions
-- [ ] Refactor the code to be production ready
+- [x] Add fast API trends topic endpoint
+- [ ] Add a UI dashboard
+- [ ] write a RADME.md with docker instructions
+- [ ] Add unit and integration tests
 - [ ] Add logging and exception handling
-- [ ] Dockerize 
+- [x] Dockerize 
 - [ ] Add instructions to run serverless on GCP
 - [ ] Add gRPC API
+- [ ] Fine tune kafka topic partitions and keys

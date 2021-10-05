@@ -1,0 +1,9 @@
+[project]
+name = "Apache Kafka/Beam streaming app POC"
+description = "Fetch, aggregate and stream twitter data using kafka and beam"
+
+[twitter]
+access_token = 260009358-wVR4pOpmtSzgjP9syYZt66rTo73sadqe4Uye9AXx
+access_token_secret = hRwNNXEo1cOSZdjSCNnikWoOilHgUiWW5KMiwt7xdVy3E
+consumer_key = FSpXjcrLrW3MvRyQLOT1ptZO3
+consumer_secret = HT4qS0DvrCamnebMVS69LO379hpkJwtN0mzxeNtp4QXYV23eTb
